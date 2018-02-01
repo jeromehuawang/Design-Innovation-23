@@ -14,29 +14,29 @@
 //  rect(10, 10, width-20, height-20);   -- draw a rectangle
 
 function JeromePatch(x, y) {
-  noFill();
+  fill(12,15,94);
   stroke(238);
   rect(x, y, 300, 300);
-  background(12,15,94)
+
 // your code here!
   
 	function draw() {
 		colorMode(HSB);
 		fill(11,46,93)
 		noStroke();
-	  quad(30,50,70,260,230,260,270,50);
+	  quad(x+30,y+50,x+70,y+260,x+230,y+260,x+270,y+50);
     fill(360,66,95);
-    quad(220,50,180,260,230,260,270,50);
+    quad(x+220,y+50,x+180,y+260,x+230,y+260,x+270,y+50);
     fill(250);
     
     textSize(30)
-    text('cup', 125,150)
+    text('cup', x+150,y+150)
 	}
 draw()    
 }
 
-background(255);
-JeromePatch(0, 0); // draw patch at upper-left
+//background(255);
+//JeromePatch(0, 0); // draw patch at upper-left
 
 background(255);
 JeromePatch(width-301, height-301); // draw patch at lower-right
