@@ -1,0 +1,33 @@
+down
+function sevendown {js
+  down
+  down
+  down
+  down
+  down
+  down
+  down
+}
+sevendown
+right
+right
+function sevenup {
+  up
+  up
+  up
+  up
+  up
+  up
+  up
+ }
+ sevenup
+ right
+ right
+ sevendown
+ right
+ right
+ sevenup
+ right
+ right
+ sevendown
+ right
