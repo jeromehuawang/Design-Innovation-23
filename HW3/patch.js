@@ -1,18 +1,3 @@
-// Rudy Playground
-
-// This is a static, p5-like environment.
-
-// You can draw lines and other shapes here, set colors, etc.,
-// just as you would with p5. No setup() or draw() functions needed.
-
-// Here are some commands to get you started:
-//  line(10, 10, width-10, height-10);   -- draw a diagonal line
-//  line(10, height-10, width-10, 10);   -- draw another
-//  colorMode(HSB);                      -- start coloring with Hue, Saturation, Brightness
-//  stroke(0, 255, 255);                 -- stroke with a nice red color
-//  noFill();                            -- and don't fill
-//  rect(10, 10, width-20, height-20);   -- draw a rectangle
-
 function JeromePatch(x, y) {
   fill(12,15,94);
   stroke(238);
@@ -22,6 +7,14 @@ function JeromePatch(x, y) {
   
 	function draw() {
 		colorMode(HSB);
+    stroke(337,56,100)
+    for (var i = 20; i <= width-60; i = i + 10) {
+  		var startX = x+30;
+ 		  var startY = i+30;
+ 		  var endX = i+30;
+  		var endY = y+30;
+  line(startX, startY, endX, endY);
+}
 		fill(11,46,93)
 		noStroke();
 	  quad(x+30,y+50,x+70,y+260,x+230,y+260,x+270,y+50);
@@ -30,7 +23,7 @@ function JeromePatch(x, y) {
     fill(250);
     
     textSize(30)
-    text('cup', x+150,y+150)
+    text('cup', width/2,height/2)
 	}
 draw()    
 }
