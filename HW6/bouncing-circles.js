@@ -42,6 +42,7 @@ function draw() {
       circle.xd = -circle.xd;
 			circle.r = circle.r - random(1,3)
 			push();
+      textSize(random(10,60))
       text('boop', random(0,width), random(0,height));
 			pop();
     }
@@ -49,6 +50,7 @@ function draw() {
       circle.yd = -circle.yd;
 			circle.r = circle.r - random(1,3)
 			push();
+      textSize(random(10,60))
       text('boop', random(0,width), random(0,height));
 			pop();
     }
